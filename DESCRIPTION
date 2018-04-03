@@ -1,6 +1,6 @@
 Package: zbank
 Type: Package
-Title: 'ZooBank' Client
+Title: 'ZooBank' API Client
 Description: 'ZooBank' API (<http://zoobank.org/Api>) client.
 Version: 0.0.1.9210
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
