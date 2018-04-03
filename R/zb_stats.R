@@ -1,7 +1,7 @@
 #' Get data by identifier
 #'
 #' @export
-#' @param star_date (date/character) a start date
+#' @param start_date (date/character) a start date
 #' @param end_date (date/character) an end date
 #' @param period (character) the period. Default: day
 #' @template all

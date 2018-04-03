@@ -7,7 +7,7 @@
 \usage{
 zb_name_usages(name = NULL, id = NULL, query = NULL, parse = TRUE, ...)
 
-zb_name_usages_(name, id, query, ...)
+zb_name_usages_(name = NULL, id = NULL, query = NULL, ...)
 }
 \arguments{
 \item{name}{(character) A taxonomic name}

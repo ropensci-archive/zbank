@@ -10,6 +10,8 @@ zb_stats(start_date, end_date, period = "day", parse = TRUE, ...)
 zb_stats_(start_date, end_date, period, ...)
 }
 \arguments{
+\item{start_date}{(date/character) a start date}
+
 \item{end_date}{(date/character) an end date}
 
 \item{period}{(character) the period. Default: day}
@@ -19,8 +21,6 @@ data.frame (\code{TRUE}). If \code{TRUE}, we also give back a
 tibble for easier consumption. Default: \code{TRUE}}
 
 \item{...}{Curl options passed to \code{\link[crul]{HttpClient}}}
-
-\item{star_date}{(date/character) a start date}
 }
 \description{
 Get data by identifier
