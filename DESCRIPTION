@@ -1,0 +1,21 @@
+Package: zbank
+Type: Package
+Title: 'ZooBank' Client
+Description: 'ZooBank' API (<http://zoobank.org/Api>) client.
+Version: 0.0.1.9210
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"))
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/zbank
+BugReports: https://github.com/ropenscilabs/zbank/issues
+Roxygen: list(markdown = TRUE)
+Imports:
+    crul (>= 0.5.0),
+    jsonlite (>= 1.5),
+    tibble
+Suggests:
+    testthat,
+    webmockr (>= 0.2.1.9224),
+    vcr (>= 0.0.7.9324)
+Remotes: ropensci/vcr, ropensci/webmockr
+RoxygenNote: 6.0.1

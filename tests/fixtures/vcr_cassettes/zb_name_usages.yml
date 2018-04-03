@@ -1,0 +1,38 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://zoobank.org/NomenclaturalActs.json/Pseudanthias_carlsoni
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: r-curl/3.2 crul/0.5.2 rOpenSci(zbank/0.0.1.9210)
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      content-type: text/json;charset=utf-8
+      date: Tue, 03 Apr 2018 01:09:05 GMT
+      server: Apache-Coyote/1.1
+      set-cookie:
+      - CFID=14675; expires=Thu, 01-Apr-27 01:09:05 GMT; path=/; HttpOnly
+      - CFTOKEN=D228C74E-E409-4F0C-85DC5B9BADEA46DA; expires=Thu, 01-Apr-27 01:09:05
+        GMT; path=/; HttpOnly
+      - bdglobals=rO0ABXNyABVjb20ubmFyeS51dGlsLkZhc3RNYXAAAAAAAAAAAQIAAHhyABdqYXZvbHV0aW9uLnV0aWwuRmFzdE1hcAAAAAAAAAABAwAAeHBzcgAwY29tLm5hcnkudXRpbC5GYXN0TWFwJFN0cmluZ0NvbXBhcmF0b3JJZ25vcmVDYXNlAAAAAAAAAAECAAB4cgAeamF2b2x1dGlvbi51dGlsLkZhc3RDb21wYXJhdG9yHDzsm6drOX8CAAB4cHNyACZqYXZvbHV0aW9uLnV0aWwuRmFzdENvbXBhcmF0b3IkRGVmYXVsdLmriKRyTatLAgAAeHEAfgAEdwUAAAAABnQACGhpdGNvdW50c3IAK2NvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZk51bWJlckRhdGEAAAAAAAAAAQIABloABmJJbnROb0QACGRvdWJsZU5vSQAFaW50Tm9aAA1pc0phdmFOdW1lcmljWgAIbW9kaWZpZWRMAAVpbWFnZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyAC9jb20ubmFyeXgudGFnZnVzaW9uLmNmbS5lbmdpbmUuY2ZKYXZhT2JqZWN0RGF0YQAAAAAAAAABAwAAeHIAJWNvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZkRhdGEAAAAAAAAAAQIABloACmV4cHJlc3Npb25aABBpbnZhbGlkTG9vcEluZGV4WgAKaXNJbXBsaWNpdEkAC3F1ZXJ5Q29sdW1uTAAIamF2YWNhc3R0AClMY29tL25hcnl4L3RhZ2Z1c2lvbi9jZm0vZW5naW5lL0phdmFjYXN0O0wADnF1ZXJ5VGFibGVEYXRhdAAQTGphdmEvdXRpbC9MaXN0O3hwAAAAAAAAAHBweAEAAAAAAAAAAAAAAAEAAXB0AAlsYXN0dmlzaXRzcgApY29tLm5hcnl4LnRhZ2Z1c2lvbi5jZm0uZW5naW5lLmNmRGF0ZURhdGEAAAAAAAAAAQIABEoABHRpbWVMAApkYXRlU3RyaW5ncQB+AApMAAxmb3JtYXRTdHJpbmdxAH4ACkwAEmZvcm1hdFN0cmluZ1ByZWZpeHEAfgAKeHEAfgALAAAAAAAAAHBweAAAAWKJDOBKcHQAE3l5eXktTU0tZGQgSEg6bW06c3N0AAJ0c3QAC3RpbWVjcmVhdGVkc3EAfgARAAAAAAAAAHBweAAAAWKJDNpOcHEAfgATcQB+ABR0AAh1cmx0b2tlbnNyACtjb20ubmFyeXgudGFnZnVzaW9uLmNmbS5lbmdpbmUuY2ZTdHJpbmdEYXRhAAAAAAAAAAECAAZaABdtYXliZUJvb2xlYW5Db252ZXJ0aWJsZVoAFG1heWJlRGF0ZUNvbnZlcnRpYmxlWgAWbWF5YmVOdW1iZXJDb252ZXJ0aWJsZUwABGRhdGFxAH4AClsACWRhdGFCeXRlc3QAAltCWwAJZGF0YUNoYXJzdAACW0N4cQB+AAsAAAAAAAAAcHB4AQEBdAA2Q0ZJRD0xNDY3NSZDRlRPS0VOPUQyMjhDNzRFLUU0MDktNEYwQy04NURDNUI5QkFERUE0NkRBcHB0AAdjZnRva2Vuc3EAfgAYAAAAAAAAAHBweAEBAXQAI0QyMjhDNzRFLUU0MDktNEYwQy04NURDNUI5QkFERUE0NkRBcHB0AARjZmlkc3EAfgAYAAAAAAAAAHBweAEBAXQABTE0Njc1cHB4;
+        expires=Thu, 01-Apr-27 01:09:05 GMT; path=/; HttpOnly
+      - bdclient_zoobank=rO0ABXNyABVjb20ubmFyeS51dGlsLkZhc3RNYXAAAAAAAAAAAQIAAHhyABdqYXZvbHV0aW9uLnV0aWwuRmFzdE1hcAAAAAAAAAABAwAAeHBzcgAwY29tLm5hcnkudXRpbC5GYXN0TWFwJFN0cmluZ0NvbXBhcmF0b3JJZ25vcmVDYXNlAAAAAAAAAAECAAB4cgAeamF2b2x1dGlvbi51dGlsLkZhc3RDb21wYXJhdG9yHDzsm6drOX8CAAB4cHNyACZqYXZvbHV0aW9uLnV0aWwuRmFzdENvbXBhcmF0b3IkRGVmYXVsdLmriKRyTatLAgAAeHEAfgAEdwUAAAAAAHg=;
+        expires=Thu, 01-Apr-27 01:09:05 GMT; path=/; HttpOnly
+      status: HTTP/1.1 200 OK
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '[{"tnuuuid":"","OriginalReferenceUUID":"427D7953-E8FC-41E8-BEA7-8AE644E6DE77","protonymuuid":
+        "6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2", "label": "carlsoni Randall & Pyle
+        2001", "value": "carlsoni Randall & Pyle 2001","lsid":"urn:lsid:zoobank.org:act:6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2","parentname":"","namestring":"carlsoni","rankgroup":"Species","usageauthors":"","taxonnamerankid":"","parentusageuuid":"","cleanprotonym"
+        : "Pseudanthias carlsoni Randall & Pyle, 2001","NomenclaturalCode":"ICZN"}]'
+  recorded_at: 2018-04-03 01:08:12 GMT
+  recorded_with: vcr/0.0.7.9324
