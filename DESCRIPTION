@@ -4,7 +4,7 @@ Title: 'ZooBank' API Client
 Description: 'ZooBank' API (<http://zoobank.org/Api>) client.
 Version: 0.0.1.9210
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
-    email = "myrmecocystus@gmail.com"))
+    email = "sckott@protonmail.com"))
 License: MIT + file LICENSE
 URL: https://github.com/ropenscilabs/zbank
 BugReports: https://github.com/ropenscilabs/zbank/issues
