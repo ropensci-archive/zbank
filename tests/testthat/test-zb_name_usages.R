@@ -8,7 +8,7 @@ test_that("high level works - parsing", {
     expect_is(aa, "tbl_df")
     expect_is(aa$namestring, 'character')
     expect_equal(aa$namestring, 'carlsoni')
-  }, preserve_exact_body_bytes = FALSE)
+  })
 })
 
 
@@ -23,7 +23,7 @@ test_that("high level works - not parsing", {
     expect_gt(length(aa[[1]]), 1)
     expect_is(aa[[1]]$namestring, 'character')
     expect_equal(aa[[1]]$namestring, 'carlsoni')
-  }, preserve_exact_body_bytes = FALSE)
+  })
 })
 
 test_that("low level works", {
@@ -38,15 +38,13 @@ test_that("low level works", {
     expect_is(aa, "character")
     expect_is(aajson, "data.frame")
     expect_equal(NROW(aajson), 1)
-  }, preserve_exact_body_bytes = FALSE)
+  })
 })
 
 test_that("no results", {
   skip_on_cran()
 
-  vcr::use_cassette("zb_name_usages_no_results", {
-    expect_error(zb_name_usages('asdfad'), "Not Found")
-  }, preserve_exact_body_bytes = FALSE)
+  expect_error(zb_name_usages('asdfad'), "Not Found")
 })
 
 test_that("fails well", {
