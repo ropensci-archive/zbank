@@ -4,7 +4,7 @@ Title: 'ZooBank' API Client
 Description: 'ZooBank' API (<http://zoobank.org/Api>) client.
 Version: 0.1.0
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
-    email = "sckott@protonmail.com"))
+    email = "sckott@protonmail.com", comment = c(ORCID = "0000-0003-1444-9135")))
 License: MIT + file LICENSE
 URL: https://github.com/ropenscilabs/zbank
 BugReports: https://github.com/ropenscilabs/zbank/issues
@@ -18,3 +18,6 @@ Suggests:
     testthat,
     vcr
 RoxygenNote: 6.1.0
+X-schema.org-applicationCategory: Taxonomy
+X-schema.org-keywords: taxonomy, biology, nomenclature, JSON, API, web, api-client, Zoobank, Zoological, species, names
+X-schema.org-isPartOf: https://ropensci.org
