@@ -1,0 +1,75 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://zoobank.org/Statistics.json?start_date=2018-03-01&end_date=2018-04-01&period=day
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: r-curl/3.2 crul/0.6.0 rOpenSci(zbank/0.1.0)
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      content-type: application/json;charset=utf-8
+      date: Mon, 22 Oct 2018 22:24:12 GMT
+      server: Apache-Coyote/1.1
+      set-cookie:
+      - bdclient_zoobank=rO0ABXNyABVjb20ubmFyeS51dGlsLkZhc3RNYXAAAAAAAAAAAQIAAHhyABdqYXZvbHV0aW9uLnV0aWwuRmFzdE1hcAAAAAAAAAABAwAAeHBzcgAwY29tLm5hcnkudXRpbC5GYXN0TWFwJFN0cmluZ0NvbXBhcmF0b3JJZ25vcmVDYXNlAAAAAAAAAAECAAB4cgAeamF2b2x1dGlvbi51dGlsLkZhc3RDb21wYXJhdG9yHDzsm6drOX8CAAB4cHNyACZqYXZvbHV0aW9uLnV0aWwuRmFzdENvbXBhcmF0b3IkRGVmYXVsdLmriKRyTatLAgAAeHEAfgAEdwUAAAAAAHg=;
+        expires=Wed, 20-Oct-27 22:24:12 GMT; path=/; HttpOnly
+      - bdglobals=rO0ABXNyABVjb20ubmFyeS51dGlsLkZhc3RNYXAAAAAAAAAAAQIAAHhyABdqYXZvbHV0aW9uLnV0aWwuRmFzdE1hcAAAAAAAAAABAwAAeHBzcgAwY29tLm5hcnkudXRpbC5GYXN0TWFwJFN0cmluZ0NvbXBhcmF0b3JJZ25vcmVDYXNlAAAAAAAAAAECAAB4cgAeamF2b2x1dGlvbi51dGlsLkZhc3RDb21wYXJhdG9yHDzsm6drOX8CAAB4cHNyACZqYXZvbHV0aW9uLnV0aWwuRmFzdENvbXBhcmF0b3IkRGVmYXVsdLmriKRyTatLAgAAeHEAfgAEdwUAAAAABnQACGhpdGNvdW50c3IAK2NvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZk51bWJlckRhdGEAAAAAAAAAAQIABloABmJJbnROb0QACGRvdWJsZU5vSQAFaW50Tm9aAA1pc0phdmFOdW1lcmljWgAIbW9kaWZpZWRMAAVpbWFnZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyAC9jb20ubmFyeXgudGFnZnVzaW9uLmNmbS5lbmdpbmUuY2ZKYXZhT2JqZWN0RGF0YQAAAAAAAAABAwAAeHIAJWNvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZkRhdGEAAAAAAAAAAQIABloACmV4cHJlc3Npb25aABBpbnZhbGlkTG9vcEluZGV4WgAKaXNJbXBsaWNpdEkAC3F1ZXJ5Q29sdW1uTAAIamF2YWNhc3R0AClMY29tL25hcnl4L3RhZ2Z1c2lvbi9jZm0vZW5naW5lL0phdmFjYXN0O0wADnF1ZXJ5VGFibGVEYXRhdAAQTGphdmEvdXRpbC9MaXN0O3hwAAAAAAAAAHBweAEAAAAAAAAAAAAAAAIAAXB0AAlsYXN0dmlzaXRzcgApY29tLm5hcnl4LnRhZ2Z1c2lvbi5jZm0uZW5naW5lLmNmRGF0ZURhdGEAAAAAAAAAAQIABEoABHRpbWVMAApkYXRlU3RyaW5ncQB+AApMAAxmb3JtYXRTdHJpbmdxAH4ACkwAEmZvcm1hdFN0cmluZ1ByZWZpeHEAfgAKeHEAfgALAAAAAAAAAHBweAAAAWad4OEocHQAE3l5eXktTU0tZGQgSEg6bW06c3N0AAJ0c3QAC3RpbWVjcmVhdGVkc3EAfgARAAAAAAAAAHBweAAAAWad4OEocHEAfgATcQB+ABR0AAh1cmx0b2tlbnNyACtjb20ubmFyeXgudGFnZnVzaW9uLmNmbS5lbmdpbmUuY2ZTdHJpbmdEYXRhAAAAAAAAAAECAAZaABdtYXliZUJvb2xlYW5Db252ZXJ0aWJsZVoAFG1heWJlRGF0ZUNvbnZlcnRpYmxlWgAWbWF5YmVOdW1iZXJDb252ZXJ0aWJsZUwABGRhdGFxAH4AClsACWRhdGFCeXRlc3QAAltCWwAJZGF0YUNoYXJzdAACW0N4cQB+AAsAAAAAAAAAcHB4AQEBdAA2Q0ZJRD01NDYzOCZDRlRPS0VOPTRENzRDQjM4LTc0NDItNDBGNy05MDk4RTUzQTU2NDc1N0E3cHB0AAdjZnRva2Vuc3EAfgAYAAAAAAAAAHBweAEBAXQAIzRENzRDQjM4LTc0NDItNDBGNy05MDk4RTUzQTU2NDc1N0E3cHB0AARjZmlkc3EAfgAYAAAAAAAAAHBweAEBAXQABTU0NjM4cHB4;
+        expires=Wed, 20-Oct-27 22:24:12 GMT; path=/; HttpOnly
+      status: HTTP/1.1 200 OK
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"columns":["identifierdomain","day","recordcount"],"data":[["ZooBank
+        Author","2018-03-01",39],["ZooBank Author","2018-03-02",25],["ZooBank Author","2018-03-03",9],["ZooBank
+        Author","2018-03-04",6],["ZooBank Author","2018-03-05",23],["ZooBank Author","2018-03-06",17],["ZooBank
+        Author","2018-03-07",28],["ZooBank Author","2018-03-08",20],["ZooBank Author","2018-03-09",19],["ZooBank
+        Author","2018-03-10",3],["ZooBank Author","2018-03-11",8],["ZooBank Author","2018-03-12",43],["ZooBank
+        Author","2018-03-13",69],["ZooBank Author","2018-03-14",24],["ZooBank Author","2018-03-15",28],["ZooBank
+        Author","2018-03-16",10],["ZooBank Author","2018-03-17",6],["ZooBank Author","2018-03-18",12],["ZooBank
+        Author","2018-03-19",43],["ZooBank Author","2018-03-20",34],["ZooBank Author","2018-03-21",20],["ZooBank
+        Author","2018-03-22",40],["ZooBank Author","2018-03-23",23],["ZooBank Author","2018-03-24",5],["ZooBank
+        Author","2018-03-25",9],["ZooBank Author","2018-03-26",37],["ZooBank Author","2018-03-27",26],["ZooBank
+        Author","2018-03-28",27],["ZooBank Author","2018-03-29",16],["ZooBank Author","2018-03-30",9],["ZooBank
+        Author","2018-03-31",6],["ZooBank Author","2018-04-01",3],["ZooBank Nomenclatural
+        Act","2018-03-01",72],["ZooBank Nomenclatural Act","2018-03-02",41],["ZooBank
+        Nomenclatural Act","2018-03-03",59],["ZooBank Nomenclatural Act","2018-03-04",103],["ZooBank
+        Nomenclatural Act","2018-03-05",91],["ZooBank Nomenclatural Act","2018-03-06",27],["ZooBank
+        Nomenclatural Act","2018-03-07",64],["ZooBank Nomenclatural Act","2018-03-08",26],["ZooBank
+        Nomenclatural Act","2018-03-09",72],["ZooBank Nomenclatural Act","2018-03-10",92],["ZooBank
+        Nomenclatural Act","2018-03-11",71],["ZooBank Nomenclatural Act","2018-03-12",51],["ZooBank
+        Nomenclatural Act","2018-03-13",70],["ZooBank Nomenclatural Act","2018-03-14",30],["ZooBank
+        Nomenclatural Act","2018-03-15",41],["ZooBank Nomenclatural Act","2018-03-16",43],["ZooBank
+        Nomenclatural Act","2018-03-17",57],["ZooBank Nomenclatural Act","2018-03-18",36],["ZooBank
+        Nomenclatural Act","2018-03-19",121],["ZooBank Nomenclatural Act","2018-03-20",55],["ZooBank
+        Nomenclatural Act","2018-03-21",118],["ZooBank Nomenclatural Act","2018-03-22",45],["ZooBank
+        Nomenclatural Act","2018-03-23",93],["ZooBank Nomenclatural Act","2018-03-24",73],["ZooBank
+        Nomenclatural Act","2018-03-25",31],["ZooBank Nomenclatural Act","2018-03-26",106],["ZooBank
+        Nomenclatural Act","2018-03-27",105],["ZooBank Nomenclatural Act","2018-03-28",141],["ZooBank
+        Nomenclatural Act","2018-03-29",102],["ZooBank Nomenclatural Act","2018-03-30",123],["ZooBank
+        Nomenclatural Act","2018-03-31",112],["ZooBank Nomenclatural Act","2018-04-01",83],["ZooBank
+        Publication","2018-03-01",33],["ZooBank Publication","2018-03-02",36],["ZooBank
+        Publication","2018-03-03",9],["ZooBank Publication","2018-03-04",51],["ZooBank
+        Publication","2018-03-05",39],["ZooBank Publication","2018-03-06",24],["ZooBank
+        Publication","2018-03-07",33],["ZooBank Publication","2018-03-08",18],["ZooBank
+        Publication","2018-03-09",29],["ZooBank Publication","2018-03-10",16],["ZooBank
+        Publication","2018-03-11",44],["ZooBank Publication","2018-03-12",34],["ZooBank
+        Publication","2018-03-13",49],["ZooBank Publication","2018-03-14",28],["ZooBank
+        Publication","2018-03-15",47],["ZooBank Publication","2018-03-16",18],["ZooBank
+        Publication","2018-03-17",18],["ZooBank Publication","2018-03-18",21],["ZooBank
+        Publication","2018-03-19",41],["ZooBank Publication","2018-03-20",42],["ZooBank
+        Publication","2018-03-21",44],["ZooBank Publication","2018-03-22",33],["ZooBank
+        Publication","2018-03-23",28],["ZooBank Publication","2018-03-24",12],["ZooBank
+        Publication","2018-03-25",22],["ZooBank Publication","2018-03-26",32],["ZooBank
+        Publication","2018-03-27",29],["ZooBank Publication","2018-03-28",31],["ZooBank
+        Publication","2018-03-29",32],["ZooBank Publication","2018-03-30",13],["ZooBank
+        Publication","2018-03-31",17],["ZooBank Publication","2018-04-01",8]]}'
+  recorded_at: 2018-10-22 22:24:08 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8

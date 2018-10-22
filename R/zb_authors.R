@@ -16,7 +16,7 @@ zb_authors <- function(id = NULL, query = NULL, parse = TRUE, ...) {
 
 #' @export
 #' @rdname zb_authors
-zb_authors_ <- function(id, query, ...) {
+zb_authors_ <- function(id = NULL, query = NULL, ...) {
   assert_is(id, 'character')
   assert_is(query, 'character')
   

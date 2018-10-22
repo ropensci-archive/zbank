@@ -1,0 +1,65 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://zoobank.org/References.json/427D7953-E8FC-41E8-BEA7-8AE644E6DE77
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: r-curl/3.2 crul/0.6.0 rOpenSci(zbank/0.1.0)
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      content-type: text/json;charset=utf-8
+      date: Mon, 22 Oct 2018 22:32:12 GMT
+      server: Apache-Coyote/1.1
+      set-cookie:
+      - bdclient_zoobank=rO0ABXNyABVjb20ubmFyeS51dGlsLkZhc3RNYXAAAAAAAAAAAQIAAHhyABdqYXZvbHV0aW9uLnV0aWwuRmFzdE1hcAAAAAAAAAABAwAAeHBzcgAwY29tLm5hcnkudXRpbC5GYXN0TWFwJFN0cmluZ0NvbXBhcmF0b3JJZ25vcmVDYXNlAAAAAAAAAAECAAB4cgAeamF2b2x1dGlvbi51dGlsLkZhc3RDb21wYXJhdG9yHDzsm6drOX8CAAB4cHNyACZqYXZvbHV0aW9uLnV0aWwuRmFzdENvbXBhcmF0b3IkRGVmYXVsdLmriKRyTatLAgAAeHEAfgAEdwUAAAAAAHg=;
+        expires=Wed, 20-Oct-27 22:32:13 GMT; path=/; HttpOnly
+      - bdglobals=rO0ABXNyABVjb20ubmFyeS51dGlsLkZhc3RNYXAAAAAAAAAAAQIAAHhyABdqYXZvbHV0aW9uLnV0aWwuRmFzdE1hcAAAAAAAAAABAwAAeHBzcgAwY29tLm5hcnkudXRpbC5GYXN0TWFwJFN0cmluZ0NvbXBhcmF0b3JJZ25vcmVDYXNlAAAAAAAAAAECAAB4cgAeamF2b2x1dGlvbi51dGlsLkZhc3RDb21wYXJhdG9yHDzsm6drOX8CAAB4cHNyACZqYXZvbHV0aW9uLnV0aWwuRmFzdENvbXBhcmF0b3IkRGVmYXVsdLmriKRyTatLAgAAeHEAfgAEdwUAAAAABnQACGhpdGNvdW50c3IAK2NvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZk51bWJlckRhdGEAAAAAAAAAAQIABloABmJJbnROb0QACGRvdWJsZU5vSQAFaW50Tm9aAA1pc0phdmFOdW1lcmljWgAIbW9kaWZpZWRMAAVpbWFnZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyAC9jb20ubmFyeXgudGFnZnVzaW9uLmNmbS5lbmdpbmUuY2ZKYXZhT2JqZWN0RGF0YQAAAAAAAAABAwAAeHIAJWNvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZkRhdGEAAAAAAAAAAQIABloACmV4cHJlc3Npb25aABBpbnZhbGlkTG9vcEluZGV4WgAKaXNJbXBsaWNpdEkAC3F1ZXJ5Q29sdW1uTAAIamF2YWNhc3R0AClMY29tL25hcnl4L3RhZ2Z1c2lvbi9jZm0vZW5naW5lL0phdmFjYXN0O0wADnF1ZXJ5VGFibGVEYXRhdAAQTGphdmEvdXRpbC9MaXN0O3hwAAAAAAAAAHBweAEAAAAAAAAAAAAAAAIAAXB0AAlsYXN0dmlzaXRzcgApY29tLm5hcnl4LnRhZ2Z1c2lvbi5jZm0uZW5naW5lLmNmRGF0ZURhdGEAAAAAAAAAAQIABEoABHRpbWVMAApkYXRlU3RyaW5ncQB+AApMAAxmb3JtYXRTdHJpbmdxAH4ACkwAEmZvcm1hdFN0cmluZ1ByZWZpeHEAfgAKeHEAfgALAAAAAAAAAHBweAAAAWad6Db3cHQAE3l5eXktTU0tZGQgSEg6bW06c3N0AAJ0c3QAC3RpbWVjcmVhdGVkc3EAfgARAAAAAAAAAHBweAAAAWad6C+2cHQAE3l5eXktTU0tZGQgSEg6bW06c3N0AAJ0c3QACHVybHRva2Vuc3IAK2NvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZlN0cmluZ0RhdGEAAAAAAAAAAQIABloAF21heWJlQm9vbGVhbkNvbnZlcnRpYmxlWgAUbWF5YmVEYXRlQ29udmVydGlibGVaABZtYXliZU51bWJlckNvbnZlcnRpYmxlTAAEZGF0YXEAfgAKWwAJZGF0YUJ5dGVzdAACW0JbAAlkYXRhQ2hhcnN0AAJbQ3hxAH4ACwAAAAAAAABwcHgBAQF0ADZDRklEPTU0Njc5JkNGVE9LRU49MkI2OUI4QkQtNjk3Qy00NjRDLUI3MTkxNDQ5MTNCODlBRTRwcHQAB2NmdG9rZW5zcQB+ABoAAAAAAAAAcHB4AQEBdAAjMkI2OUI4QkQtNjk3Qy00NjRDLUI3MTkxNDQ5MTNCODlBRTRwcHQABGNmaWRzcQB+ABoAAAAAAAAAcHB4AQEBdAAFNTQ2NzlwcHg=;
+        expires=Wed, 20-Oct-27 22:32:13 GMT; path=/; HttpOnly
+      status: HTTP/1.1 200 OK
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '[{ "referenceuuid":"427D7953-E8FC-41E8-BEA7-8AE644E6DE77","label":
+        "Randall, John E. & Richard L. Pyle.  2001. Four new serranid fishes of the
+        anthiine genus Pseudanthias from the South Pacific. Raffles Bulletin of Zoology
+        49(1): 19-34.", "value": "Randall, John E. & Richard L. Pyle.  2001. Four
+        new serranid fishes of the anthiine genus Pseudanthias from the South Pacific.
+        Raffles Bulletin of Zoology 49(1): 19-34.", "authorlist" : "Randall, John
+        E. & Richard L. Pyle.", "year" : "2001", "title" : "Four new serranid fishes
+        of the anthiine genus <i>Pseudanthias<\/i> from the South Pacific", "citationdetails"
+        : "<I>Raffles Bulletin of Zoology<\/I> <B>49<\/B>(1): 19-34.","volume":"49","number":"1","edition":"","publisher":"","placepublished":"","pagination":"19-34","startpage":"19","endpage":"34","language":"English","languageid":"19691433","referencetype":"Journal
+        Article","lsid":"urn:lsid:zoobank.org:pub:427D7953-E8FC-41E8-BEA7-8AE644E6DE77","parentreferenceid":"0089FB37-AA19-41B8-8622-011CCA4EF778","parentreference":"Raffles
+        Bulletin of Zoology,  (Raffles Bull. Zool.)","authors":[[{"familyname":"Randall","givenname":"John
+        Ernest","gnubuuid":"24E58859-FF5A-431B-9127-F0584680EA71"}],[{"familyname":"Pyle","givenname":"Richard
+        Lawrence","gnubuuid":"8C466CBE-3F7D-4DC9-8CBD-26DD3F57E212"}]],"NomenclaturalActs"
+        : [{"tnuuuid":"B1FBF746-782B-4AE8-9817-F4E3B8C03FFF","OriginalReferenceUUID":"EA625D0C-DE66-42E9-95BF-297D9A6C0443","protonymuuid":
+        "F77E4029-F731-4B62-829E-A050365DF383", "label": "Pseudanthias Bleeker in
+        Bleeker 1871-1876", "value": "Pseudanthias Bleeker in Bleeker 1871-1876","lsid":"urn:lsid:zoobank.org:act:F77E4029-F731-4B62-829E-A050365DF383","parentname":"","namestring":"Pseudanthias","rankgroup":"Genus","usageauthors":"Randall
+        & Pyle","taxonnamerankid":"60","parentusageuuid":"","cleanprotonym" : "Pseudanthias
+        Bleeker in Bleeker, 1871","NomenclaturalCode":"ICZN"},{"tnuuuid":"6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2","OriginalReferenceUUID":"427D7953-E8FC-41E8-BEA7-8AE644E6DE77","protonymuuid":
+        "6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2", "label": "carlsoni Randall & Pyle
+        2001", "value": "carlsoni Randall & Pyle 2001","lsid":"urn:lsid:zoobank.org:act:6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2","parentname":"Pseudanthias","namestring":"carlsoni","rankgroup":"Species","usageauthors":"Randall
+        & Pyle","taxonnamerankid":"70","parentusageuuid":"B1FBF746-782B-4AE8-9817-F4E3B8C03FFF","cleanprotonym"
+        : "Pseudanthias carlsoni Randall & Pyle, 2001","NomenclaturalCode":"ICZN"},{"tnuuuid":"07DAC21C-21CE-42E9-B835-686B03E98E81","OriginalReferenceUUID":"427D7953-E8FC-41E8-BEA7-8AE644E6DE77","protonymuuid":
+        "07DAC21C-21CE-42E9-B835-686B03E98E81", "label": "flavicauda Randall & Pyle
+        2001", "value": "flavicauda Randall & Pyle 2001","lsid":"urn:lsid:zoobank.org:act:07DAC21C-21CE-42E9-B835-686B03E98E81","parentname":"Pseudanthias","namestring":"flavicauda","rankgroup":"Species","usageauthors":"Randall
+        & Pyle","taxonnamerankid":"70","parentusageuuid":"B1FBF746-782B-4AE8-9817-F4E3B8C03FFF","cleanprotonym"
+        : "Pseudanthias flavicauda Randall & Pyle, 2001","NomenclaturalCode":"ICZN"},{"tnuuuid":"BB0F5636-525B-4B1F-BDAD-E4C4FA7EB03B","OriginalReferenceUUID":"427D7953-E8FC-41E8-BEA7-8AE644E6DE77","protonymuuid":
+        "BB0F5636-525B-4B1F-BDAD-E4C4FA7EB03B", "label": "hiva Randall & Pyle 2001",
+        "value": "hiva Randall & Pyle 2001","lsid":"urn:lsid:zoobank.org:act:BB0F5636-525B-4B1F-BDAD-E4C4FA7EB03B","parentname":"Pseudanthias","namestring":"hiva","rankgroup":"Species","usageauthors":"Randall
+        & Pyle","taxonnamerankid":"70","parentusageuuid":"B1FBF746-782B-4AE8-9817-F4E3B8C03FFF","cleanprotonym"
+        : "Pseudanthias hiva Randall & Pyle, 2001","NomenclaturalCode":"ICZN"},{"tnuuuid":"C7D36E15-93A9-43CD-A1FE-D734B676D66D","OriginalReferenceUUID":"427D7953-E8FC-41E8-BEA7-8AE644E6DE77","protonymuuid":
+        "C7D36E15-93A9-43CD-A1FE-D734B676D66D", "label": "privitera Randall & Pyle
+        2001", "value": "privitera Randall & Pyle 2001","lsid":"urn:lsid:zoobank.org:act:C7D36E15-93A9-43CD-A1FE-D734B676D66D","parentname":"Pseudanthias","namestring":"privitera","rankgroup":"Species","usageauthors":"Randall
+        & Pyle","taxonnamerankid":"70","parentusageuuid":"B1FBF746-782B-4AE8-9817-F4E3B8C03FFF","cleanprotonym"
+        : "Pseudanthias privitera Randall & Pyle, 2001","NomenclaturalCode":"ICZN"}]}]'
+  recorded_at: 2018-10-22 22:32:09 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8

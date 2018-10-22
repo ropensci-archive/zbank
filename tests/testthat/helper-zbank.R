@@ -2,7 +2,7 @@
 library("vcr")
 invisible(
   vcr::vcr_configure(
-    dir = "../fixtures/vcr_cassettes",
+    dir = "../fixtures",
     preserve_exact_body_bytes = FALSE
   )
 )

@@ -7,7 +7,7 @@
 \usage{
 zb_authors(id = NULL, query = NULL, parse = TRUE, ...)
 
-zb_authors_(id, query, ...)
+zb_authors_(id = NULL, query = NULL, ...)
 }
 \arguments{
 \item{id}{(integer/numeric) An author identifier}

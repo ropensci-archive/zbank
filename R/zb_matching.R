@@ -12,7 +12,8 @@ zb_matching <- function(id, parse = TRUE, ...) {
   out <- zb_matching_(id, ...)
   tmp <- jsonlite::fromJSON(out, parse)
   if (parse) {
-    df <- tibble::as_tibble(do.call(data.frame, tmp$DATA))
+    df <- tibble::as_tibble(do.call(data.frame, 
+      c(tmp$DATA, stringsAsFactors = FALSE)))
     names(df) <- tolower(names(df))
     return(df)
   } else {

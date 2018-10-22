@@ -1,0 +1,40 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://zoobank.org/Identifiers.json/6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: r-curl/3.2 crul/0.6.0 rOpenSci(zbank/0.1.0)
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      content-length: '1391'
+      content-type: application/json;charset=utf-8
+      date: Mon, 22 Oct 2018 22:15:01 GMT
+      server: Apache-Coyote/1.1
+      set-cookie:
+      - bdclient_zoobank=rO0ABXNyABVjb20ubmFyeS51dGlsLkZhc3RNYXAAAAAAAAAAAQIAAHhyABdqYXZvbHV0aW9uLnV0aWwuRmFzdE1hcAAAAAAAAAABAwAAeHBzcgAwY29tLm5hcnkudXRpbC5GYXN0TWFwJFN0cmluZ0NvbXBhcmF0b3JJZ25vcmVDYXNlAAAAAAAAAAECAAB4cgAeamF2b2x1dGlvbi51dGlsLkZhc3RDb21wYXJhdG9yHDzsm6drOX8CAAB4cHNyACZqYXZvbHV0aW9uLnV0aWwuRmFzdENvbXBhcmF0b3IkRGVmYXVsdLmriKRyTatLAgAAeHEAfgAEdwUAAAAAAHg=;
+        expires=Wed, 20-Oct-27 22:15:01 GMT; path=/; HttpOnly
+      - bdglobals=rO0ABXNyABVjb20ubmFyeS51dGlsLkZhc3RNYXAAAAAAAAAAAQIAAHhyABdqYXZvbHV0aW9uLnV0aWwuRmFzdE1hcAAAAAAAAAABAwAAeHBzcgAwY29tLm5hcnkudXRpbC5GYXN0TWFwJFN0cmluZ0NvbXBhcmF0b3JJZ25vcmVDYXNlAAAAAAAAAAECAAB4cgAeamF2b2x1dGlvbi51dGlsLkZhc3RDb21wYXJhdG9yHDzsm6drOX8CAAB4cHNyACZqYXZvbHV0aW9uLnV0aWwuRmFzdENvbXBhcmF0b3IkRGVmYXVsdLmriKRyTatLAgAAeHEAfgAEdwUAAAAABnQACGhpdGNvdW50c3IAK2NvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZk51bWJlckRhdGEAAAAAAAAAAQIABloABmJJbnROb0QACGRvdWJsZU5vSQAFaW50Tm9aAA1pc0phdmFOdW1lcmljWgAIbW9kaWZpZWRMAAVpbWFnZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyAC9jb20ubmFyeXgudGFnZnVzaW9uLmNmbS5lbmdpbmUuY2ZKYXZhT2JqZWN0RGF0YQAAAAAAAAABAwAAeHIAJWNvbS5uYXJ5eC50YWdmdXNpb24uY2ZtLmVuZ2luZS5jZkRhdGEAAAAAAAAAAQIABloACmV4cHJlc3Npb25aABBpbnZhbGlkTG9vcEluZGV4WgAKaXNJbXBsaWNpdEkAC3F1ZXJ5Q29sdW1uTAAIamF2YWNhc3R0AClMY29tL25hcnl4L3RhZ2Z1c2lvbi9jZm0vZW5naW5lL0phdmFjYXN0O0wADnF1ZXJ5VGFibGVEYXRhdAAQTGphdmEvdXRpbC9MaXN0O3hwAAAAAAAAAHBweAEAAAAAAAAAAAAAAAIAAXB0AAlsYXN0dmlzaXRzcgApY29tLm5hcnl4LnRhZ2Z1c2lvbi5jZm0uZW5naW5lLmNmRGF0ZURhdGEAAAAAAAAAAQIABEoABHRpbWVMAApkYXRlU3RyaW5ncQB+AApMAAxmb3JtYXRTdHJpbmdxAH4ACkwAEmZvcm1hdFN0cmluZ1ByZWZpeHEAfgAKeHEAfgALAAAAAAAAAHBweAAAAWad2HfOcHQAE3l5eXktTU0tZGQgSEg6bW06c3N0AAJ0c3QAC3RpbWVjcmVhdGVkc3EAfgARAAAAAAAAAHBweAAAAWad2HfOcHEAfgATcQB+ABR0AAh1cmx0b2tlbnNyACtjb20ubmFyeXgudGFnZnVzaW9uLmNmbS5lbmdpbmUuY2ZTdHJpbmdEYXRhAAAAAAAAAAECAAZaABdtYXliZUJvb2xlYW5Db252ZXJ0aWJsZVoAFG1heWJlRGF0ZUNvbnZlcnRpYmxlWgAWbWF5YmVOdW1iZXJDb252ZXJ0aWJsZUwABGRhdGFxAH4AClsACWRhdGFCeXRlc3QAAltCWwAJZGF0YUNoYXJzdAACW0N4cQB+AAsAAAAAAAAAcHB4AQEBdAA2Q0ZJRD01NDU5OSZDRlRPS0VOPTg2QkQ5N0ZELTM3NzAtNDZBNi04QURCREFCNDkyMjA3Mjg0cHB0AAdjZnRva2Vuc3EAfgAYAAAAAAAAAHBweAEBAXQAIzg2QkQ5N0ZELTM3NzAtNDZBNi04QURCREFCNDkyMjA3Mjg0cHB0AARjZmlkc3EAfgAYAAAAAAAAAHBweAEBAXQABTU0NTk5cHB4;
+        expires=Wed, 20-Oct-27 22:15:01 GMT; path=/; HttpOnly
+      status: HTTP/1.1 200 OK
+    body:
+      encoding: UTF-8
+      string: '[{"Identifier": "66491", "IdentifierDomain": "CAS Ichthy Species codes",
+        "Abbreviation": "CAS_SPC","IdentifierURL":"http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=66491","RegisteringAgentGivenName":"","RegisteringAgentFamilyName":"","RegisteringAgentOrganizationName":"","IdentifierUUID":"D1AC9EE0-4191-447E-BE58-38115732B18A",
+        "DomainLogoURL":"http://zoobank.org/images/CASicon.jpg","ResolutionNote":""},{"Identifier":
+        "643345", "IdentifierDomain": "Taxonomic Serial Number", "Abbreviation": "ITIS-TSN","IdentifierURL":"http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=643345","RegisteringAgentGivenName":"","RegisteringAgentFamilyName":"","RegisteringAgentOrganizationName":"","IdentifierUUID":"5C434260-AC90-4CF6-9B1D-8BF526E0F27C",
+        "DomainLogoURL":"http://zoobank.org/images/ITISicon.jpg","ResolutionNote":""},{"Identifier":
+        "urn:lsid:zoobank.org:act:6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2", "IdentifierDomain":
+        "ZooBank Nomenclatural Act", "Abbreviation": "ZB-Act","IdentifierURL":"http://zoobank.org/urn:lsid:zoobank.org:act:6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2","RegisteringAgentGivenName":"William
+        N.","RegisteringAgentFamilyName":"Eschmeyer","RegisteringAgentOrganizationName":"","IdentifierUUID":"C2052FF6-0CBF-4E67-B8A7-2B0F05AF2192",
+        "DomainLogoURL":"http://zoobank.org/images/ICZNicon.jpg","ResolutionNote":""}]'
+  recorded_at: 2018-10-22 22:14:57 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8
