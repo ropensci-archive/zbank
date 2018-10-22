@@ -2,20 +2,19 @@ Package: zbank
 Type: Package
 Title: 'ZooBank' API Client
 Description: 'ZooBank' API (<http://zoobank.org/Api>) client.
-Version: 0.0.1.9210
+Version: 0.1.0
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "sckott@protonmail.com"))
 License: MIT + file LICENSE
 URL: https://github.com/ropenscilabs/zbank
 BugReports: https://github.com/ropenscilabs/zbank/issues
 Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
 Imports:
     crul (>= 0.5.0),
     jsonlite (>= 1.5),
     tibble
 Suggests:
     testthat,
-    webmockr (>= 0.2.1.9224),
-    vcr (>= 0.0.8.9538)
-Remotes: ropensci/vcr, ropensci/webmockr
-RoxygenNote: 6.0.1
+    vcr
+RoxygenNote: 6.1.0

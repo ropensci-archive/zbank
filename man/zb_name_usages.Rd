@@ -5,7 +5,8 @@
 \alias{zb_name_usages_}
 \title{Name usages}
 \usage{
-zb_name_usages(name = NULL, id = NULL, query = NULL, parse = TRUE, ...)
+zb_name_usages(name = NULL, id = NULL, query = NULL, parse = TRUE,
+  ...)
 
 zb_name_usages_(name = NULL, id = NULL, query = NULL, ...)
 }
@@ -17,7 +18,7 @@ zb_name_usages_(name = NULL, id = NULL, query = NULL, ...)
 \item{query}{(character) A taxonomic name to query}
 
 \item{parse}{(logical) Whether to parse to list (\code{FALSE}) or
-data.frame (\code{TRUE}). If \code{TRUE}, we also give back a 
+data.frame (\code{TRUE}). If \code{TRUE}, we also give back a
 tibble for easier consumption. Default: \code{TRUE}}
 
 \item{...}{Curl options passed to \code{\link[crul]{HttpClient}}}

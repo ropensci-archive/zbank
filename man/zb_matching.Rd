@@ -11,7 +11,7 @@ zb_matching(id, parse = TRUE, ...)
 or publication. required}
 
 \item{parse}{(logical) Whether to parse to list (\code{FALSE}) or
-data.frame (\code{TRUE}). If \code{TRUE}, we also give back a 
+data.frame (\code{TRUE}). If \code{TRUE}, we also give back a
 tibble for easier consumption. Default: \code{TRUE}}
 
 \item{...}{Curl options passed to \code{\link[crul]{HttpClient}}}

@@ -15,7 +15,7 @@ zb_publications_(id, query, ...)
 \item{query}{(character) Query terms}
 
 \item{parse}{(logical) Whether to parse to list (\code{FALSE}) or
-data.frame (\code{TRUE}). If \code{TRUE}, we also give back a 
+data.frame (\code{TRUE}). If \code{TRUE}, we also give back a
 tibble for easier consumption. Default: \code{TRUE}}
 
 \item{...}{Curl options passed to \code{\link[crul]{HttpClient}}}
