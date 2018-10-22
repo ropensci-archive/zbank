@@ -21,7 +21,7 @@ test_that("high level works", {
     expect_is(bb$label, 'character')
     expect_is(bb$value, 'character')
     expect_gt(NROW(bb), 1)
-  })
+  }, preserve_exact_body_bytes = TRUE)
 })
 
 
