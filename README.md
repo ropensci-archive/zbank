@@ -31,6 +31,13 @@ of the function name, e.g., `zb_name_usages_`
 
 ## Install
 
+CRAN version
+
+
+```r
+install.packages("zbank")
+```
+
 Development version
 
 
@@ -51,9 +58,9 @@ Name usages
 ```r
 zb_name_usages(name = "Pseudanthias carlsoni")
 #> # A tibble: 1 x 14
-#>   tnuuuid originalreferenc… protonymuuid  label  value  lsid    parentname
-#> * <chr>   <chr>             <chr>         <chr>  <chr>  <chr>   <chr>     
-#> 1 ""      427D7953-E8FC-41… 6EA8BB2A-A57… carls… carls… urn:ls… ""        
+#>   tnuuuid originalreferen… protonymuuid label value lsid  parentname
+#> * <chr>   <chr>            <chr>        <chr> <chr> <chr> <chr>     
+#> 1 ""      427D7953-E8FC-4… 6EA8BB2A-A5… carl… carl… urn:… ""        
 #> # ... with 7 more variables: namestring <chr>, rankgroup <chr>,
 #> #   usageauthors <chr>, taxonnamerankid <chr>, parentusageuuid <chr>,
 #> #   cleanprotonym <chr>, nomenclaturalcode <chr>
@@ -64,7 +71,7 @@ Publications
 
 ```r
 zb_publications(query = "pyle")
-#> # A tibble: 151 x 22
+#> # A tibble: 153 x 22
 #>    referenceuuid label value authorlist year  title citationdetails volume
 #>  * <chr>         <chr> <chr> <chr>      <chr> <chr> <chr>           <chr> 
 #>  1 A91FACC3-F39… <Uns… <Uns… <Unspecif… ""    [Ori… ""              ""    
@@ -77,7 +84,7 @@ zb_publications(query = "pyle")
 #>  8 FAFE53C6-FDD… Bous… Bous… Boustany,… 2002  Sate… <em>Nature</em… 415   
 #>  9 18985DB2-CC5… Bush… Bush… Bush, Eli… 1997  Taxo… <em>Harvard Pa… 2     
 #> 10 180454B5-D0C… Cid … Cid … Cid Del P… 2016  Five… <em>Zootaxa</e… 4109  
-#> # ... with 141 more rows, and 14 more variables: number <chr>,
+#> # ... with 143 more rows, and 14 more variables: number <chr>,
 #> #   edition <chr>, publisher <chr>, placepublished <chr>,
 #> #   pagination <chr>, startpage <chr>, endpage <chr>, language <chr>,
 #> #   languageid <chr>, referencetype <chr>, lsid <chr>,
@@ -90,12 +97,12 @@ Authors
 ```r
 zb_authors(query = "Schmutz")
 #> # A tibble: 3 x 9
-#>   agentnameid   label  value  zblsid    familyname givenname preferreduuid
-#> * <chr>         <chr>  <chr>  <chr>     <chr>      <chr>     <chr>        
-#> 1 F16D374C-531… Achit… Achit… urn:lsid… Achitte-S… Helga C.  F16D374C-531…
-#> 2 EC923CC6-E5E… Schmu… Schmu… urn:lsid… Schmutz    Karl      EC923CC6-E5E…
-#> 3 2E04A84F-459… Schmu… Schmu… ""        Schmutzler Clarence… 2E04A84F-459…
-#> # ... with 2 more variables: agentid <chr>, isuser <chr>
+#>   agentnameid label value zblsid familyname givenname preferreduuid agentid
+#> * <chr>       <chr> <chr> <chr>  <chr>      <chr>     <chr>         <chr>  
+#> 1 F16D374C-5… Achi… Achi… urn:l… Achitte-S… Helga C.  F16D374C-531… F16D37…
+#> 2 EC923CC6-E… Schm… Schm… urn:l… Schmutz    Karl      EC923CC6-E5E… EC923C…
+#> 3 2E04A84F-4… Schm… Schm… ""     Schmutzler Clarence… 2E04A84F-459… 2E04A8…
+#> # ... with 1 more variable: isuser <chr>
 ```
 
 Get info by any ZooBank identifier
@@ -104,11 +111,11 @@ Get info by any ZooBank identifier
 ```r
 zb_id(id = "6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2")
 #> # A tibble: 3 x 10
-#>   identifier  identifierdomain abbreviation identifierurl registeringagen…
-#> * <chr>       <chr>            <chr>        <chr>         <chr>           
-#> 1 66491       CAS Ichthy Spec… CAS_SPC      http://resea… ""              
-#> 2 643345      Taxonomic Seria… ITIS-TSN     http://www.i… ""              
-#> 3 urn:lsid:z… ZooBank Nomencl… ZB-Act       http://zooba… William N.      
+#>   identifier identifierdomain abbreviation identifierurl registeringagen…
+#> * <chr>      <chr>            <chr>        <chr>         <chr>           
+#> 1 66491      CAS Ichthy Spec… CAS_SPC      http://resea… ""              
+#> 2 643345     Taxonomic Seria… ITIS-TSN     http://www.i… ""              
+#> 3 urn:lsid:… ZooBank Nomencl… ZB-Act       http://zooba… William N.      
 #> # ... with 5 more variables: registeringagentfamilyname <chr>,
 #> #   registeringagentorganizationname <chr>, identifieruuid <chr>,
 #> #   domainlogourl <chr>, resolutionnote <chr>
@@ -120,20 +127,20 @@ Matching taxon name service
 ```r
 zb_matching(id = "FFF7160A-372D-40E9-9611-23AF5D9EAC4C")
 #> # A tibble: 36 x 8
-#>    protonymuuid   acceptedprotonymu… protonymuuidarray    fullnamestring  
-#>    <fct>          <fct>              <fct>                <fct>           
-#>  1 FFF7160A-372D… FFF7160A-372D-40E… FBDC898C-F1EA-4768-… Cheilodipterus …
-#>  2 FFF7160A-372D… FFF7160A-372D-40E… 97CE20CD-4D6E-4A59-… Gasterosteus Sa…
-#>  3 FFF7160A-372D… FFF7160A-372D-40E… 97CE20CD-4D6E-4A59-… Gaſteroſteus Sa…
-#>  4 FFF7160A-372D… FFF7160A-372D-40E… 4D4EC609-D241-411E-… Pomatomus salta…
-#>  5 FFF7160A-372D… FFF7160A-372D-40E… 4D4EC609-D241-411E-… Pomatomus salta…
-#>  6 FFF7160A-372D… FFF7160A-372D-40E… 67D18558-763F-48B2-… Temnodon saltat…
-#>  7 FFF7160A-372D… FFF7160A-372D-40E… FBDC898C-F1EA-4768-… Cheilodipterus …
-#>  8 FFF7160A-372D… FFF7160A-372D-40E… 97CE20CD-4D6E-4A59-… Gasterosteus Sa…
-#>  9 FFF7160A-372D… FFF7160A-372D-40E… 97CE20CD-4D6E-4A59-… Gaſteroſteus Sa…
-#> 10 FFF7160A-372D… FFF7160A-372D-40E… 4D4EC609-D241-411E-… Pomatomus salta…
+#>    protonymuuid acceptedprotony… protonymuuidarr… fullnamestring
+#>    <chr>        <chr>            <chr>            <chr>         
+#>  1 FFF7160A-37… FFF7160A-372D-4… FBDC898C-F1EA-4… Cheilodipteru…
+#>  2 FFF7160A-37… FFF7160A-372D-4… 97CE20CD-4D6E-4… Gasterosteus …
+#>  3 FFF7160A-37… FFF7160A-372D-4… 97CE20CD-4D6E-4… Gaſteroſteus …
+#>  4 FFF7160A-37… FFF7160A-372D-4… 4D4EC609-D241-4… Pomatomus sal…
+#>  5 FFF7160A-37… FFF7160A-372D-4… 4D4EC609-D241-4… Pomatomus sal…
+#>  6 FFF7160A-37… FFF7160A-372D-4… 67D18558-763F-4… Temnodon salt…
+#>  7 FFF7160A-37… FFF7160A-372D-4… FBDC898C-F1EA-4… Cheilodipteru…
+#>  8 FFF7160A-37… FFF7160A-372D-4… 97CE20CD-4D6E-4… Gasterosteus …
+#>  9 FFF7160A-37… FFF7160A-372D-4… 97CE20CD-4D6E-4… Gaſteroſteus …
+#> 10 FFF7160A-37… FFF7160A-372D-4… 4D4EC609-D241-4… Pomatomus sal…
 #> # ... with 26 more rows, and 4 more variables: nomenclaturalcodeid <int>,
-#> #   taxonrank <fct>, synonymtype <int>, referencecount <int>
+#> #   taxonrank <chr>, synonymtype <int>, referencecount <int>
 ```
 
 ZooBank usage stats
@@ -150,9 +157,9 @@ zb_stats(start_date = "2018-03-01", end_date = "2018-04-01")
 #>  4 ZooBank Author   2018-03-04 6          
 #>  5 ZooBank Author   2018-03-05 23         
 #>  6 ZooBank Author   2018-03-06 17         
-#>  7 ZooBank Author   2018-03-07 30         
+#>  7 ZooBank Author   2018-03-07 28         
 #>  8 ZooBank Author   2018-03-08 20         
-#>  9 ZooBank Author   2018-03-09 20         
+#>  9 ZooBank Author   2018-03-09 19         
 #> 10 ZooBank Author   2018-03-10 3          
 #> # ... with 86 more rows
 ```
@@ -163,3 +170,5 @@ zb_stats(start_date = "2018-03-01", end_date = "2018-04-01")
 * License: MIT
 * Get citation information for `zbank` in R doing `citation(package = 'zbank')`
 * Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+[![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)

@@ -64,6 +64,12 @@ of the function name, e.g., `zb_name_usages_`
 
 ## Install
 
+CRAN version
+
+```{r eval=FALSE}
+install.packages("zbank")
+```
+
 Development version
 
 ```{r eval=FALSE}
@@ -118,3 +124,5 @@ zb_stats(start_date = "2018-03-01", end_date = "2018-04-01")
 * License: MIT
 * Get citation information for `zbank` in R doing `citation(package = 'zbank')`
 * Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+[![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
