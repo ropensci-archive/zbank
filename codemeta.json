@@ -5,7 +5,7 @@
   ],
   "@type": "SoftwareSourceCode",
   "identifier": "zbank",
-  "description": "Interface to the 'ZooBank' API (<http://zoobank.org/Api>) client.\n    Zoobank (<http://zoobank.org/>) is the official registry of zoological \n    nomenclature. Methods are provided for using each of the API endpoints, \n    including for querying by author, querying for publications, get \n    statistics on 'ZooBank' activity, and more.",
+  "description": "Interface to the 'ZooBank' API (<http://zoobank.org/Api>) client.\n    'ZooBank' (<http://zoobank.org/>) is the official registry of zoological \n    nomenclature. Methods are provided for using each of the API endpoints, \n    including for querying by author, querying for publications, get \n    statistics on 'ZooBank' activity, and more.",
   "name": "zbank: 'ZooBank' API Client",
   "codeRepository": "https://github.com/ropenscilabs/zbank",
   "issueTracker": "https://github.com/ropenscilabs/zbank/issues",
@@ -103,12 +103,12 @@
     }
   ],
   "readme": "https://github.com/ropenscilabs/zbank/blob/master/README.md",
-  "fileSize": "83.286KB",
+  "fileSize": "83.288KB",
   "contIntegration": [
     "https://travis-ci.org/ropenscilabs/zbank",
     "https://codecov.io/github/ropenscilabs/zbank?branch=master"
   ],
-  "keywords": ["taxonomy", "biology", "nomenclature", "JSON", "API", "web", "api-client", "Zoobank", "Zoological", "species", "names", "rstats", "zoology", "identifiers", "zoobank", "r", "r-package"],
+  "keywords": ["taxonomy", "biology", "nomenclature", "JSON", "API", "web", "api-client", "ZooBank", "Zoological", "species", "names", "rstats", "zoology", "identifiers", "zoobank", "r", "r-package"],
   "applicationCategory": "Taxonomy",
   "isPartOf": "https://ropensci.org",
   "releaseNotes": "https://github.com/ropenscilabs/zbank/blob/master/NEWS.md"
