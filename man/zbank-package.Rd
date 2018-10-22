@@ -10,10 +10,10 @@ zbank - ZooBank Client
 }
 \section{ZooBank API Docs}{
 
-See \url{http://zoobank.org/Api}
+See http://zoobank.org/Api
 }
 
 \author{
-Scott Chamberlain \email{myrmecocystus@gmail.com}
+Scott Chamberlain \email{sckott@protonmail.com}
 }
 \keyword{package}

@@ -1,4 +1,4 @@
-#' Authors
+#' Search for authors
 #'
 #' @export
 #' @param id (integer/numeric) An author identifier

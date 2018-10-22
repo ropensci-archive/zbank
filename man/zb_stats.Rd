@@ -3,7 +3,7 @@
 \name{zb_stats}
 \alias{zb_stats}
 \alias{zb_stats_}
-\title{Get data by identifier}
+\title{Get statistics on Zoobank activity}
 \usage{
 zb_stats(start_date, end_date, period = "day", parse = TRUE, ...)
 
@@ -23,7 +23,7 @@ tibble for easier consumption. Default: \code{TRUE}}
 \item{...}{Curl options passed to \code{\link[crul]{HttpClient}}}
 }
 \description{
-Get data by identifier
+Get statistics on Zoobank activity
 }
 \examples{
 \dontrun{

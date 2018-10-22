@@ -1,4 +1,4 @@
-#' Get data by identifier
+#' Get statistics on Zoobank activity
 #'
 #' @export
 #' @param start_date (date/character) a start date

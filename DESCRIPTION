@@ -1,7 +1,11 @@
 Package: zbank
 Type: Package
 Title: 'ZooBank' API Client
-Description: 'ZooBank' API (<http://zoobank.org/Api>) client.
+Description: Interface to the 'ZooBank' API (<http://zoobank.org/Api>) client.
+    Zoobank (<http://zoobank.org/>) is the official registry of zoological 
+    nomenclature. Methods are provided for using each of the API endpoints, 
+    including for querying by author, querying for publications, get 
+    statistics on ZooBank activity, and more.
 Version: 0.1.0
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "sckott@protonmail.com", comment = c(ORCID = "0000-0003-1444-9135")))

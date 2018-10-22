@@ -3,7 +3,7 @@
 \name{zb_authors}
 \alias{zb_authors}
 \alias{zb_authors_}
-\title{Authors}
+\title{Search for authors}
 \usage{
 zb_authors(id = NULL, query = NULL, parse = TRUE, ...)
 
@@ -21,7 +21,7 @@ tibble for easier consumption. Default: \code{TRUE}}
 \item{...}{Curl options passed to \code{\link[crul]{HttpClient}}}
 }
 \description{
-Authors
+Search for authors
 }
 \examples{
 \dontrun{

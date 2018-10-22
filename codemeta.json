@@ -5,7 +5,7 @@
   ],
   "@type": "SoftwareSourceCode",
   "identifier": "zbank",
-  "description": "'ZooBank' API (<http://zoobank.org/Api>) client.",
+  "description": "Interface to the 'ZooBank' API (<http://zoobank.org/Api>) client.\n    Zoobank (<http://zoobank.org/>) is the official registry of zoological \n    nomenclature. Methods are provided for using each of the API endpoints, \n    including for querying by author, querying for publications, get \n    statistics on ZooBank activity, and more.",
   "name": "zbank: 'ZooBank' API Client",
   "codeRepository": "https://github.com/ropenscilabs/zbank",
   "issueTracker": "https://github.com/ropenscilabs/zbank/issues",
@@ -103,7 +103,7 @@
     }
   ],
   "readme": "https://github.com/ropenscilabs/zbank/blob/master/README.md",
-  "fileSize": "56.952KB",
+  "fileSize": "57.12KB",
   "contIntegration": [
     "https://travis-ci.org/ropenscilabs/zbank",
     "https://codecov.io/github/ropenscilabs/zbank?branch=master"
