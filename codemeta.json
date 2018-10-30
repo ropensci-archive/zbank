@@ -10,7 +10,7 @@
   "codeRepository": "https://github.com/ropenscilabs/zbank",
   "issueTracker": "https://github.com/ropenscilabs/zbank/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.0",
+  "version": "0.1.0.9100",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -103,7 +103,7 @@
     }
   ],
   "readme": "https://github.com/ropenscilabs/zbank/blob/master/README.md",
-  "fileSize": "83.288KB",
+  "fileSize": "83.302KB",
   "contIntegration": [
     "https://travis-ci.org/ropenscilabs/zbank",
     "https://codecov.io/github/ropenscilabs/zbank?branch=master"
@@ -111,5 +111,11 @@
   "keywords": ["taxonomy", "biology", "nomenclature", "JSON", "API", "web", "api-client", "ZooBank", "Zoological", "species", "names", "rstats", "zoology", "identifiers", "zoobank", "r", "r-package"],
   "applicationCategory": "Taxonomy",
   "isPartOf": "https://ropensci.org",
-  "releaseNotes": "https://github.com/ropenscilabs/zbank/blob/master/NEWS.md"
+  "releaseNotes": "https://github.com/ropenscilabs/zbank/blob/master/NEWS.md",
+  "provider": {
+    "@id": "https://cran.r-project.org",
+    "@type": "Organization",
+    "name": "Comprehensive R Archive Network (CRAN)",
+    "url": "https://cran.r-project.org"
+  }
 }
