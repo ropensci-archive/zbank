@@ -36,6 +36,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![cran checks](https://cranchecks.info/badges/worst/zbank)](https://cranchecks.info/pkgs/zbank)
 [![Build Status](https://travis-ci.org/ropenscilabs/zbank.svg?branch=master)](https://travis-ci.org/ropenscilabs/zbank)
 [![codecov.io](https://codecov.io/github/ropenscilabs/zbank/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/zbank?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/zbank)](https://github.com/metacran/cranlogs.app)

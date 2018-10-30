@@ -103,7 +103,7 @@
     }
   ],
   "readme": "https://github.com/ropenscilabs/zbank/blob/master/README.md",
-  "fileSize": "83.302KB",
+  "fileSize": "83.409KB",
   "contIntegration": [
     "https://travis-ci.org/ropenscilabs/zbank",
     "https://codecov.io/github/ropenscilabs/zbank?branch=master"
@@ -117,5 +117,6 @@
     "@type": "Organization",
     "name": "Comprehensive R Archive Network (CRAN)",
     "url": "https://cran.r-project.org"
-  }
+  },
+  "developmentStatus": "http://www.repostatus.org/#active"
 }
