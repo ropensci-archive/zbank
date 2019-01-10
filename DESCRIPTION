@@ -20,8 +20,9 @@ Imports:
     tibble
 Suggests:
     testthat,
-    vcr
+    vcr (>= 0.2.0.9114)
 RoxygenNote: 6.1.0
+Remotes: ropensci/vcr
 X-schema.org-applicationCategory: Taxonomy
 X-schema.org-keywords: taxonomy, biology, nomenclature, JSON, API, web, api-client, ZooBank, Zoological, species, names
 X-schema.org-isPartOf: https://ropensci.org

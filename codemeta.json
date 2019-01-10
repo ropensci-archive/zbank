@@ -53,13 +53,14 @@
       "@type": "SoftwareApplication",
       "identifier": "vcr",
       "name": "vcr",
+      "version": ">= 0.2.0.9114",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=vcr"
+      "sameAs": "https://github.com/ropensci/vcr"
     }
   ],
   "softwareRequirements": [
@@ -103,7 +104,7 @@
     }
   ],
   "readme": "https://github.com/ropenscilabs/zbank/blob/master/README.md",
-  "fileSize": "83.357KB",
+  "fileSize": "83.377KB",
   "contIntegration": [
     "https://travis-ci.org/ropenscilabs/zbank",
     "https://codecov.io/github/ropenscilabs/zbank?branch=master"
