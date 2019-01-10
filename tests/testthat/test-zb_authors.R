@@ -1,7 +1,7 @@
 context("zb_authors")
 
-test_that("high level works", {
-  vcr::use_cassette("zb_authors_high_level", {
+vcr::use_cassette("zb_authors_high_level", {
+  test_that("high level works", {
     aa <- zb_authors(id = "8C466CBE-3F7D-4DC9-8CBD-26DD3F57E212")
 
     expect_is(aa, "data.frame")
@@ -25,10 +25,10 @@ test_that("high level works", {
 })
 
 
-test_that("high level works - not parsing", {
-  skip_on_cran()
+vcr::use_cassette("zb_authors_not_parsing", {
+  test_that("high level works - not parsing", {
+    skip_on_cran()
 
-  vcr::use_cassette("zb_authors_not_parsing", {
     aa <- zb_authors(id = "8C466CBE-3F7D-4DC9-8CBD-26DD3F57E212", parse = FALSE)
 
     expect_is(aa, "list")
@@ -39,12 +39,12 @@ test_that("high level works - not parsing", {
   })
 })
 
-test_that("low level works", {
-  skip_on_cran()
+vcr::use_cassette("zb_authors_low_level", {
+  test_that("low level works", {
+    skip_on_cran()
 
-  library("jsonlite")
+    library("jsonlite")
 
-  vcr::use_cassette("zb_authors_low_level", {
     aa <- zb_authors_(id = "8C466CBE-3F7D-4DC9-8CBD-26DD3F57E212")
     aajson <- jsonlite::fromJSON(aa)
 

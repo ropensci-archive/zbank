@@ -1,7 +1,7 @@
 context("zb_publications")
 
-test_that("high level works", {
-  vcr::use_cassette("zb_publications_high_level", {
+vcr::use_cassette("zb_publications_high_level", {
+  test_that("high level works", {
     aa <- zb_publications(id = "427D7953-E8FC-41E8-BEA7-8AE644E6DE77")
 
     expect_is(aa, "data.frame")
@@ -21,14 +21,14 @@ test_that("high level works", {
     expect_is(bb$label, 'character')
     expect_is(bb$value, 'character')
     expect_gt(NROW(bb), 1)
-  }, preserve_exact_body_bytes = TRUE)
-})
+  })
+}, preserve_exact_body_bytes = TRUE)
 
 
-test_that("high level works - not parsing", {
-  skip_on_cran()
+vcr::use_cassette("zb_publications_not_parsing", {
+  test_that("high level works - not parsing", {
+    skip_on_cran()
 
-  vcr::use_cassette("zb_publications_not_parsing", {
     aa <- zb_publications(id = "427D7953-E8FC-41E8-BEA7-8AE644E6DE77", parse = FALSE)
 
     expect_is(aa, "list")
@@ -39,12 +39,12 @@ test_that("high level works - not parsing", {
   })
 })
 
-test_that("low level works", {
-  skip_on_cran()
+vcr::use_cassette("zb_publications_low_level", {
+  test_that("low level works", {
+    skip_on_cran()
 
-  library("jsonlite")
+    library("jsonlite")
 
-  vcr::use_cassette("zb_publications_low_level", {
     aa <- zb_publications_(id = "427D7953-E8FC-41E8-BEA7-8AE644E6DE77", NULL)
     aajson <- jsonlite::fromJSON(aa)
 

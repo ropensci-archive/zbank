@@ -1,7 +1,7 @@
 context("zb_name_usages")
 
-test_that("high level works - parsing", {
-  vcr::use_cassette("zb_name_usages", {
+vcr::use_cassette("zb_name_usages", {
+  test_that("high level works - parsing", {
     aa <- zb_name_usages(name = "Pseudanthias carlsoni")
 
     expect_is(aa, "data.frame")
@@ -12,10 +12,10 @@ test_that("high level works - parsing", {
 })
 
 
-test_that("high level works - not parsing", {
-  skip_on_cran()
+vcr::use_cassette("zb_name_usages_not_parsing", {
+  test_that("high level works - not parsing", {
+    skip_on_cran()
 
-  vcr::use_cassette("zb_name_usages_not_parsing", {
     aa <- zb_name_usages(name = "Pseudanthias carlsoni", parse = FALSE)
 
     expect_is(aa, "list")
@@ -26,12 +26,12 @@ test_that("high level works - not parsing", {
   })
 })
 
-test_that("low level works", {
-  skip_on_cran()
+vcr::use_cassette("zb_name_usages_low_level", {
+  test_that("low level works", {
+    skip_on_cran()
 
-  library("jsonlite")
+    library("jsonlite")
 
-  vcr::use_cassette("zb_name_usages_low_level", {
     aa <- zb_name_usages_(name = "Pseudanthias carlsoni")
     aajson <- jsonlite::fromJSON(aa)
 

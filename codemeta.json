@@ -10,14 +10,14 @@
   "codeRepository": "https://github.com/ropenscilabs/zbank",
   "issueTracker": "https://github.com/ropenscilabs/zbank/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.0.9100",
+  "version": "0.1.0.9310",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.5.1",
+    "version": "3.5.2",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.5.1 Patched (2018-08-12 r75119)",
+  "runtimePlatform": "R version 3.5.2 Patched (2018-12-31 r75943)",
   "author": [
     {
       "@type": "Person",
@@ -103,7 +103,7 @@
     }
   ],
   "readme": "https://github.com/ropenscilabs/zbank/blob/master/README.md",
-  "fileSize": "83.409KB",
+  "fileSize": "83.357KB",
   "contIntegration": [
     "https://travis-ci.org/ropenscilabs/zbank",
     "https://codecov.io/github/ropenscilabs/zbank?branch=master"

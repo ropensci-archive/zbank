@@ -1,7 +1,7 @@
 context("zb_stats")
 
-test_that("high level works", {
-  vcr::use_cassette("zb_stats_high_level", {
+vcr::use_cassette("zb_stats_high_level", {
+  test_that("high level works", {
     aa <- zb_stats(start_date = "2018-03-01", end_date = "2018-04-01")
 
     expect_is(aa, "data.frame")
@@ -13,10 +13,10 @@ test_that("high level works", {
   })
 })
 
-test_that("high level works - not parsing", {
-  skip_on_cran()
+vcr::use_cassette("zb_stats_not_parsing", {
+  test_that("high level works - not parsing", {
+    skip_on_cran()
 
-  vcr::use_cassette("zb_stats_not_parsing", {
     aa <- zb_stats(start_date = "2018-03-01", end_date = "2018-04-01", 
       parse = FALSE)
 
@@ -26,12 +26,12 @@ test_that("high level works - not parsing", {
   })
 })
 
-test_that("low level works", {
-  skip_on_cran()
+vcr::use_cassette("zb_stats_low_level", {
+  test_that("low level works", {
+    skip_on_cran()
 
-  library("jsonlite")
+    library("jsonlite")
 
-  vcr::use_cassette("zb_stats_low_level", {
     aa <- zb_stats_(start_date = "2018-03-01", end_date = "2018-04-01", "day")
     aajson <- jsonlite::fromJSON(aa)
 

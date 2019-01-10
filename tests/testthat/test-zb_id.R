@@ -1,7 +1,7 @@
 context("zb_id")
 
-test_that("high level works", {
-  vcr::use_cassette("zb_id_high_level", {
+vcr::use_cassette("zb_id_high_level", {
+  test_that("high level works", {
     aa <- zb_id(id = "6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2")
 
     expect_is(aa, "data.frame")
@@ -13,10 +13,10 @@ test_that("high level works", {
 })
 
 
-test_that("high level works - not parsing", {
-  skip_on_cran()
+vcr::use_cassette("zb_id_not_parsing", {
+  test_that("high level works - not parsing", {
+    skip_on_cran()
 
-  vcr::use_cassette("zb_id_not_parsing", {
     aa <- zb_id(id = "6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2", parse = FALSE)
 
     expect_is(aa, "list")
@@ -26,12 +26,12 @@ test_that("high level works - not parsing", {
   })
 })
 
-test_that("low level works", {
-  skip_on_cran()
+vcr::use_cassette("zb_id_low_level", {
+  test_that("low level works", {
+    skip_on_cran()
 
-  library("jsonlite")
+    library("jsonlite")
 
-  vcr::use_cassette("zb_id_low_level", {
     aa <- zb_id_(id = "6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2")
     aajson <- jsonlite::fromJSON(aa)
 
