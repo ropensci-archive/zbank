@@ -1,46 +1,45 @@
 context("zb_stats")
 
-vcr::use_cassette("zb_stats_high_level", {
-  test_that("high level works", {
+test_that("high level works", {
+  vcr::use_cassette("zb_stats_high_level", {
     aa <- zb_stats(start_date = "2018-03-01", end_date = "2018-04-01")
-
-    expect_is(aa, "data.frame")
-    expect_is(aa, "tbl_df")
-    expect_named(aa, c('identifierdomain', 'day', 'recordcount'))
-    expect_is(aa$identifierdomain, 'character')
-    expect_type(aa$day, 'character')
-    expect_is(aa$recordcount, 'character')
   })
+
+  expect_is(aa, "data.frame")
+  expect_is(aa, "tbl_df")
+  expect_named(aa, c('identifierdomain', 'day', 'recordcount'))
+  expect_is(aa$identifierdomain, 'character')
+  expect_type(aa$day, 'character')
+  expect_is(aa$recordcount, 'character')
 })
 
-vcr::use_cassette("zb_stats_not_parsing", {
-  test_that("high level works - not parsing", {
-    skip_on_cran()
-
+test_that("high level works - not parsing", {
+  skip_on_cran()
+  
+  vcr::use_cassette("zb_stats_not_parsing", {
     aa <- zb_stats(start_date = "2018-03-01", end_date = "2018-04-01", 
       parse = FALSE)
-
-    expect_is(aa, "list")
-    expect_equal(length(aa), 2)
-    expect_named(aa, c('columns', 'data'))
   })
+
+  expect_is(aa, "list")
+  expect_equal(length(aa), 2)
+  expect_named(aa, c('columns', 'data'))
 })
 
-vcr::use_cassette("zb_stats_low_level", {
-  test_that("low level works", {
-    skip_on_cran()
-
-    library("jsonlite")
-
+test_that("low level works", {
+  skip_on_cran()
+  library("jsonlite")
+  
+  vcr::use_cassette("zb_stats_low_level", {
     aa <- zb_stats_(start_date = "2018-03-01", end_date = "2018-04-01", "day")
-    aajson <- jsonlite::fromJSON(aa)
-
-    expect_is(aa, "character")
-    expect_is(aajson, "list")
-    expect_named(aajson, c("columns", "data"))
-    expect_is(aajson$columns, "character")
-    expect_is(aajson$data, "matrix")
   })
+
+  aajson <- jsonlite::fromJSON(aa)
+  expect_is(aa, "character")
+  expect_is(aajson, "list")
+  expect_named(aajson, c("columns", "data"))
+  expect_is(aajson$columns, "character")
+  expect_is(aajson$data, "matrix")
 })
 
 test_that("fails well", {
