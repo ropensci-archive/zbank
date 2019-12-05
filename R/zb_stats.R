@@ -14,11 +14,9 @@ zb_stats <- function(start_date, end_date, period = "day", parse = TRUE, ...) {
   assert_is(parse, 'logical')
   out <- zb_stats_(start_date, end_date, period, ...)
   tmp <- jsonlite::fromJSON(out, parse)
-  if (parse) {
-    stats::setNames(tibble::as_tibble(tmp$data), tolower(tmp$columns))
-  } else {
-    tmp
-  }
+  if (!parse) return(tmp)
+  df <- data.frame(tmp$data, stringsAsFactors = FALSE)
+  stats::setNames(tibble::as_tibble(df), tolower(tmp$columns))
 }
 
 #' @export
