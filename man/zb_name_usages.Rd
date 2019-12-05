@@ -5,8 +5,7 @@
 \alias{zb_name_usages_}
 \title{Name usages}
 \usage{
-zb_name_usages(name = NULL, id = NULL, query = NULL, parse = TRUE,
-  ...)
+zb_name_usages(name = NULL, id = NULL, query = NULL, parse = TRUE, ...)
 
 zb_name_usages_(name = NULL, id = NULL, query = NULL, ...)
 }
