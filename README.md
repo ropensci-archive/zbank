@@ -14,7 +14,7 @@ ZooBank API Client
 
 ## ZooBank API Docs
 
-See <http://zoobank.org/Api>
+See http://zoobank.org/Api
 
 ## High vs. Low level package APIs
 
@@ -44,7 +44,7 @@ Development version
 
 
 ```r
-devtools::install_github("ropensci/zbank")
+remotes::install_github("ropensci/zbank")
 ```
 
 
@@ -73,20 +73,20 @@ Publications
 
 ```r
 zb_publications(query = "pyle")
-#> # A tibble: 157 x 22
+#> # A tibble: 159 x 22
 #>    referenceuuid label value authorlist year  title citationdetails volume
 #>    <chr>         <chr> <chr> <chr>      <chr> <chr> <chr>           <chr> 
-#>  1 A91FACC3-F39… <Uns… <Uns… <Unspecif… ""    [Ori… ""              ""    
-#>  2 24689AE4-C77… Alon… Alon… Alonso-Za… 2016  Manu… <em>ZooKeys</e… 550   
-#>  3 CB272EFD-80D… Aran… Aran… Arango, B… 2019  Thre… <em>ZooKeys</e… 835   
-#>  4 913BB1FB-1C2… Asgh… Asgh… Asghari, … 2015  Desc… <em>Zootaxa</e… 3986  
-#>  5 F8ECE6CE-E77… Bald… Bald… Baldwin, … 1998  <i>B… <I>Ichthyologi… 45    
-#>  6 72D9641B-2A9… Bass… Bass… Basset, Y… 1997  Para… <em>AMBIO: A J… ""    
-#>  7 5CB7EE8B-042… Bass… Bass… Basset, Y… 2000  Quan… <em>Bioscience… 50    
-#>  8 A06A8B51-46B… Bass… Bass… Bassett, … 1997  Para… <em>AMBIO: A J… ""    
-#>  9 FAFE53C6-FDD… Bous… Bous… Boustany,… 2002  Sate… <em>Nature</em… 415   
-#> 10 18985DB2-CC5… Bush… Bush… Bush, Eli… 1997  Taxo… <em>Harvard Pa… 2     
-#> # … with 147 more rows, and 14 more variables: number <chr>, edition <chr>,
+#>  1 a91facc3-f39… <Uns… <Uns… <Unspecif… ""    [Ori… ""              ""    
+#>  2 24689ae4-c77… Alon… Alon… Alonso-Za… "201… Manu… "<em>ZooKeys</… "550" 
+#>  3 cb272efd-80d… Aran… Aran… Arango, B… "201… Thre… "<em>ZooKeys</… "835" 
+#>  4 913bb1fb-1c2… Asgh… Asgh… Asghari, … "201… Desc… "<em>Zootaxa</… "3986"
+#>  5 f8ece6ce-e77… Bald… Bald… Baldwin, … "199… <i>B… "<I>Ichthyolog… "45"  
+#>  6 72d9641b-2a9… Bass… Bass… Basset, Y… "199… Para… "<em>AMBIO: A … ""    
+#>  7 5cb7ee8b-042… Bass… Bass… Basset, Y… "200… Quan… "<em>Bioscienc… "50"  
+#>  8 a06a8b51-46b… Bass… Bass… Bassett, … "199… Para… "<em>AMBIO: A … ""    
+#>  9 fafe53c6-fdd… Bous… Bous… Boustany,… "200… Sate… "<em>Nature</e… "415" 
+#> 10 18985db2-cc5… Bush… Bush… Bush, Eli… "199… Taxo… "<em>Harvard P… "2"   
+#> # … with 149 more rows, and 14 more variables: number <chr>, edition <chr>,
 #> #   publisher <chr>, placepublished <chr>, pagination <chr>, startpage <chr>,
 #> #   endpage <chr>, language <chr>, languageid <chr>, referencetype <chr>,
 #> #   lsid <chr>, parentreferenceid <chr>, parentreference <chr>, authors <list>
@@ -100,8 +100,8 @@ zb_authors(query = "Schmutz")
 #> # A tibble: 3 x 9
 #>   agentnameid label value zblsid familyname givenname preferreduuid agentid
 #>   <chr>       <chr> <chr> <chr>  <chr>      <chr>     <chr>         <chr>  
-#> 1 F16D374C-5… Achi… Achi… urn:l… Achitte-S… Helga C.  F16D374C-531… F16D37…
-#> 2 EC923CC6-E… Schm… Schm… urn:l… Schmutz    Karl      EC923CC6-E5E… EC923C…
+#> 1 F16D374C-5… Achi… Achi… "urn:… Achitte-S… Helga C.  F16D374C-531… F16D37…
+#> 2 EC923CC6-E… Schm… Schm… "urn:… Schmutz    Karl      EC923CC6-E5E… EC923C…
 #> 3 2E04A84F-4… Schm… Schm… ""     Schmutzler Clarence… 2E04A84F-459… 2E04A8…
 #> # … with 1 more variable: isuser <chr>
 ```
@@ -116,7 +116,7 @@ zb_id(id = "6EA8BB2A-A57B-47C1-953E-042D8CD8E0E2")
 #>   <chr>      <chr>            <chr>        <chr>         <chr>           
 #> 1 66491      CAS Ichthy Spec… CAS_SPC      http://resea… ""              
 #> 2 643345     Taxonomic Seria… ITIS-TSN     http://www.i… ""              
-#> 3 urn:lsid:… ZooBank Nomencl… ZB-Act       http://zooba… William N.      
+#> 3 urn:lsid:… ZooBank Nomencl… ZB-Act       http://zooba… "William N."    
 #> # … with 5 more variables: registeringagentfamilyname <chr>,
 #> #   registeringagentorganizationname <chr>, identifieruuid <chr>,
 #> #   domainlogourl <chr>, resolutionnote <chr>
@@ -158,7 +158,7 @@ zb_stats(start_date = "2018-03-01", end_date = "2018-04-01")
 #>  4 ZooBank Author   2018-03-04 6          
 #>  5 ZooBank Author   2018-03-05 23         
 #>  6 ZooBank Author   2018-03-06 17         
-#>  7 ZooBank Author   2018-03-07 27         
+#>  7 ZooBank Author   2018-03-07 26         
 #>  8 ZooBank Author   2018-03-08 20         
 #>  9 ZooBank Author   2018-03-09 19         
 #> 10 ZooBank Author   2018-03-10 3          
@@ -170,9 +170,6 @@ zb_stats(start_date = "2018-03-01", end_date = "2018-04-01")
 * Please [report any issues or bugs](https://github.com/ropensci/zbank/issues).
 * License: MIT
 * Get citation information for `zbank` in R doing `citation(package = 'zbank')`
-* Please note that this project is released with a [Contributor Code of Conduct][coc]
-By participating in this project you agree to abide by its terms.
+* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
 
 [![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
-
-[coc]: https://github.com/ropensci/zbank/blob/master/CODE_OF_CONDUCT.md
