@@ -4,9 +4,9 @@
 \name{zbank-package}
 \alias{zbank-package}
 \alias{zbank}
-\title{zbank - ZooBank Client}
+\title{zbank}
 \description{
-zbank - ZooBank Client
+ZooBank Client
 }
 \section{ZooBank API Docs}{
 
@@ -14,6 +14,6 @@ See http://zoobank.org/Api
 }
 
 \author{
-Scott Chamberlain \email{sckott@protonmail.com}
+Scott Chamberlain
 }
 \keyword{package}

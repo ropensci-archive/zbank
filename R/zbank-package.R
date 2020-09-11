@@ -1,4 +1,5 @@
-#' zbank - ZooBank Client
+#' @title zbank
+#' @description ZooBank Client
 #'
 #' @section ZooBank API Docs:
 #' See http://zoobank.org/Api
@@ -9,6 +10,6 @@
 #' @name zbank-package
 #' @aliases zbank
 #' @docType package
-#' @author Scott Chamberlain \email{sckott@@protonmail.com}
+#' @author Scott Chamberlain
 #' @keywords package
 NULL
