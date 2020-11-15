@@ -5,7 +5,7 @@ zbank
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![cran checks](https://cranchecks.info/badges/worst/zbank)](https://cranchecks.info/pkgs/zbank)
-[![R-check](https://github.com/ropensci/zbank/workflows/R-check/badge.svg)](https://github.com/ropensci/zbank/actions?query=workflow%3AR-check)s
+[![R-check](https://github.com/ropensci/zbank/workflows/R-check/badge.svg)](https://github.com/ropensci/zbank/actions?query=workflow%3AR-check)
 [![codecov.io](https://codecov.io/github/ropensci/zbank/coverage.svg?branch=master)](https://codecov.io/github/ropensci/zbank?branch=master)
 [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/zbank)](https://github.com/metacran/cranlogs.app)
 [![cran version](https://www.r-pkg.org/badges/version/zbank)](https://cran.r-project.org/package=zbank)
